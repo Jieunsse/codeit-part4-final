@@ -1,5 +1,5 @@
 import type { AxiosInstance } from 'axios';
-import { normalizeAxiosError } from './errors';
+import { normalizeAxiosError } from './errors/errors';
 
 export function setupInterceptors(instance: AxiosInstance) {
   instance.interceptors.request.use(
