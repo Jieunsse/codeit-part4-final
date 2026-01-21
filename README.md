@@ -22,21 +22,18 @@
 
 ```txt
 src/
-├─ app/                     # Next.js App Router
-│  ├─ (root)/               # 홈 페이지 라우트 그룹
-│  │  ├─ page.tsx
-│  │  └─ page.module.css
-│  ├─ error.tsx             # Error Boundary
-│  ├─ global-error.tsx      # 전역 에러 처리
-│  ├─ not-found.tsx         # 404 페이지
-│  ├─ layout.tsx            # 전역 레이아웃
-│  └─ globals.css           # 전역 스타일
-│
-├─ shared/                  # 도메인과 무관한 공통 코드
-│  ├─ apis/                 # axios 인스턴스 / 인터셉터 / 에러 처리
-│  │  └─ errors/
-│  ├─ constants/            # 전역 상수 (현재 파일 없음)
-│  ├─ styles/               # 공통 스타일 유틸
-│  ├─ types/                # 공통 타입 (현재 파일 없음)
-│  └─ utils/                # 순수 유틸 함수 (현재 파일 없음)
+├─ app/                     # Next.js App Router 엔트리
+│  └─ (root)/               # 홈 페이지 라우트 그룹
+├─ assets/                  # 정적 에셋
+│  ├─ buttons/
+│  ├─ icons/
+│  ├─ logos/
+│  └─ svgs/
+├─ components/              # 재사용 UI 컴포넌트
+└─ shared/                  # 도메인과 무관한 공통 코드
+   ├─ apis/                 # axios 인스턴스 / 인터셉터 / 에러 처리
+   ├─ constants/            # 전역 상수
+   ├─ styles/               # 공통 스타일 유틸
+   ├─ types/                # 공통 타입
+   └─ utils/                # 순수 유틸 함수
 ```
